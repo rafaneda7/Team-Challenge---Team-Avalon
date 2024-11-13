@@ -86,7 +86,51 @@ def shoot_player(tablero_jugador, tablero_oponente, size = (10,10)):
 
     return tablero_jugador,tablero_oponente
 
-def shoot_random():
+def shoot_random(tablero_jugador, tablero_oponente, size = (10,10)):
+    """
+    Función que simula un disparo aleatorio de la computadora sobre el tablero del jugador.
+    La computadora elige un disparo aleatorio y actualiza los tableros según si el disparo impacta un barco o va al agua.
+    
+    Parámetros:
+        tablero_jugador (np.array): El tablero del jugador donde se marcan los barcos y los disparos.
+        tablero_oponente (np.array): El tablero del oponente donde se marcan los disparos.
+        size (tupla): Dimensiones del tablero (número de filas, número de columnas).
+    
+    Retorna:
+        tupla: El tablero actualizado del jugador y el tablero actualizado del oponente.
+    """
+    
+    disparo_exitoso = False  # Variable que indica si el disparo fue exitoso o no.
+    
+    # Obtener las dimensiones del tablero
+    num_max_filas = size[0]  # Número máximo de filas del tablero (por defecto 10)
+    num_max_columnas = size[1]  # Número máximo de columnas del tablero (por defecto 10)
+
+    # Mientras el disparo no sea exitoso, seguir intentando disparar
+    while not disparo_exitoso:
+        # Generar coordenadas aleatorias dentro de los límites del tablero
+        # La computadora selecciona un número aleatorio entre 0 y el tamaño máximo del tablero (sin incluirlo).
+        x = random.randint(0, num_max_filas - 1)
+        y = random.randint(0, num_max_columnas - 1)
+
+        # Verificar el estado de la celda en la que la computadora disparó
+        if tablero_jugador[x, y] == "O":  # Si hay un barco (representado por "O")
+            tablero_jugador[x, y] = "X"  # Marca el impacto en el tablero del jugador
+            print(f"Disparo exitoso de la computadora al barco en: ({x}, {y})")
+            disparo_exitoso = True  # El disparo fue exitoso, se termina el ciclo.
+        elif tablero_jugador[x, y] == " ":  # Si el disparo fue al agua (representado por un espacio vacío " ")
+            tablero_jugador[x, y] = "*"  # Marca el agua en el tablero del jugador
+            print(f"La computadora disparó al agua en: ({x}, {y})")
+            disparo_exitoso = True  # El disparo fue exitoso (al agua), se termina el ciclo.
+        else:
+            # Si el lugar ya ha sido disparado antes, la computadora pierde el turno
+            print(f"Ya se ha disparado en ({x}, {y}), la computadora pierde el turno.")
+            disparo_exitoso = True  # Aquí finaliza el ciclo aunque no haya sido un disparo exitoso, solo pierde el turno.
+
+    # Retornar los tableros actualizados
+    return tablero_jugador, tablero_oponente
+
+#Este es la primera version de del disparon random si necesita correccion o alguna mejora sientanse libres de hacerlo 
 
 
 def shoot_board():
