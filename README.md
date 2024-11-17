@@ -31,13 +31,20 @@ python main.py
 3. Te tocara elegir una posicion a la que quieres disparar, si aciertas el disparo te tocara otra vez, sino te mandara un mensaje la consola y te dira que le as dado al agua y sera el turno del ordenador.
 4. El juego terminara cuando un jugador hunda todos los barcos del oponente, o si no quieres terminar la partida escribiendo Exit acabara la partida.
 
+## Estructura del codigo
+
+- *main.py*: Contiene la logica principal del codigo y de como funciona. 
+- *funciones.py*: Contiene la estructura de las funciones del programa. 
+- *clases.py*: podemos ver todo lo que tiene que ver con la creacion del tablero, colocacíon de barcos, como diparar, etc.
+- *variables.py* : Contiene el nombre de las varieables utilizadas. 
+
 ## Ejemplo
 
 
 
 
 
-# contribuciones 
+## contribuciones 
 
 Las contribuciones son bienvenidas. Si encuentras un error o tienes una sugerencia, crea un issue.
 
