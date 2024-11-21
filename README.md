@@ -43,40 +43,40 @@ python main.py
 
 ## Estructura del codigo
 
-- *main.py*: Contiene la logica principal del codigo y de como funciona. 
-- *funciones.py*: Contiene la estructura de las funciones del programa. 
-- *clases.py*: podemos ver todo lo que tiene que ver con la creacion del tablero, colocacíon de barcos, como diparar, etc.
-- *variables.py* : Contiene el nombre de las varieables utilizadas. 
+- [*main.py*](https://github.com/rafaneda7/Team-Challenge---Team-Avalon/blob/main/main.py): Contiene la logica principal del codigo y de como funciona. 
+- [*funciones.py*](https://github.com/rafaneda7/Team-Challenge---Team-Avalon/blob/main/funciones.py): Contiene la estructura de las funciones del programa. 
+- [*clases.py*](https://github.com/rafaneda7/Team-Challenge---Team-Avalon/blob/main/clases.py): podemos ver todo lo que tiene que ver con la creacion del tablero, colocacíon de barcos, como diparar, etc.
+- [*variables.py*](https://github.com/rafaneda7/Team-Challenge---Team-Avalon/blob/main/variables.py): Contiene el nombre de las varieables utilizadas. 
 
 ## Ejemplo
 
-                Tu tablero:                                       Oponente:
-            ---------------------                         ---------------------
-            | 0 1 0 1 1 0 0 1 1 1|                         | 0 0 0 0 0 0 0 0 0 0| 
-            | 0 0 0 0 0 0 0 0 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
-            | 0 0 1 1 1 1 1 0 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
-            | 1 0 0 0 0 0 0 0 0 1|                         | 0 0 0 0 0 0 0 0 0 0| 
-            | 1 0 0 0 0 0 0 1 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
-            | 1 0 0 1 0 0 0 1 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
-            | 0 0 1 0 0 1 1 0 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
-            ---------------------                         ---------------------
-                                      
+                    Tu tablero:                                       Oponente:       
+                ----------------------                         ---------------------- 
+                | 0 1 0 1 1 0 0 1 1 1|                         | 0 0 0 0 0 0 0 0 0 0| 
+                | 0 0 0 0 0 0 0 0 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
+                | 0 0 1 1 1 1 1 0 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
+                | 1 0 0 0 0 0 0 0 0 1|                         | 0 0 0 0 0 0 0 0 0 0| 
+                | 1 0 0 0 0 0 0 1 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
+                | 1 0 0 1 0 0 0 1 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
+                | 0 0 1 0 0 1 1 0 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
+                ----------------------                         ---------------------- 
+
 Los "0" en el tablero representan a los espacios vacios y los "1" representan los barcos
 Cuando se dispara, si se impacta en un barco enemigo, se marcará con un numero "2" en el tablero. Si el disparo cae en el agua, se marcará con "3".
 
 Según vaya avanzando la partida, los tableros se irán viendo de la siguiente manera: 
 
-                Tu tablero:                                       Oponente:
-            ----------------------                         ----------------------
-            | 0 2 0 1 1 0 0 1 1 1|                         | 2 2 0 0 0 0 0 0 0 0| 
-            | 0 0 0 0 0 0 0 0 0 0|                         | 0 0 0 0 0 0 2 2 2 0| 
-            | 0 0 1 2 2 2 1 0 0 0|                         | 0 0 0 3 0 0 0 0 0 0| 
-            | 1 0 3 0 0 0 0 0 0 1|                         | 3 0 0 0 0 0 0 0 0 0| 
-            | 1 0 0 0 3 0 0 2 0 0|                         | 0 2 0 0 0 3 0 0 0 0| 
-            | 1 0 3 1 0 0 0 1 0 0|                         | 0 2 0 0 0 0 0 0 3 0| 
-            | 0 0 1 0 0 1 1 0 0 0|                         | 0 3 0 0 0 0 0 0 0 0| 
-            ----------------------                         ----------------------
- 
+                    Tu tablero:                                       Oponente:       
+                ----------------------                         ---------------------- 
+                | 0 2 0 1 1 0 0 1 1 1|                         | 2 2 0 0 0 0 0 0 0 0| 
+                | 0 0 0 0 0 0 0 0 0 0|                         | 0 0 0 0 0 0 2 2 2 0| 
+                | 0 0 1 2 2 2 1 0 0 0|                         | 0 0 0 3 0 0 0 0 0 0| 
+                | 1 0 3 0 0 0 0 0 0 1|                         | 3 0 0 0 0 0 0 0 0 0| 
+                | 1 0 0 0 3 0 0 2 0 0|                         | 0 2 0 0 0 3 0 0 0 0| 
+                | 1 0 3 1 0 0 0 1 0 0|                         | 0 2 0 0 0 0 0 0 3 0| 
+                | 0 0 1 0 0 1 1 0 0 0|                         | 0 3 0 0 0 0 0 0 0 0| 
+                ----------------------                         ---------------------- 
+
 ## contribuciones 
 
 Las contribuciones son bienvenidas. Si encuentras un error o tienes una sugerencia, crea un issue.
