@@ -5,6 +5,16 @@
 Este es un juego clásico de estrategia naval cuya finalidad es hundir todos los barcos del oponente antes de que el oponente hunda los tuyos. 
 Cada jugador tiene una cuadrícula secreta donde coloca sus barcos en posiciones estratégicas, de modo que el oponente no sepa su ubicación exacta.
 
+
+## **Índice**   
+1. [Caracteristicas](#Caracteristicas)
+2. [Requisitios](#Requisitios)
+3. [Instalacion](#Instalacion)
+4. [Instruccion de uso](#Instruccion-de-uso)
+5. [Estructura del codigo](#Estructura-del-codigo)
+6. [contribuciones](#contribuciones)
+7. [Autores](#Autores)
+
 ## Caracteristicas
 
 - Modo de juego: Jugador vs Ordenador, jugador vs jugador (no se si hay) 
@@ -15,12 +25,12 @@ Cada jugador tiene una cuadrícula secreta donde coloca sus barcos en posiciones
 
 Para poder ejectuar este programa necesitas:
 
-- Tener pyhton (versiones)
+- Tener instalado Python 3.x
+- Tener instalado Numpy
 
 ## Instalacion 
 
-- clonar el repositorio o descargar el archivo:
-(https://github.com/rafaneda7/Team-Challenge---Team-Avalon) 
+- clonar el repositorio o descargar el archivo [aqui](https://github.com/rafaneda7/Team-Challenge---Team-Avalon)
 - ejecutar el programa:
 python main.py 
 
@@ -40,10 +50,33 @@ python main.py
 
 ## Ejemplo
 
+                Tu tablero:                                       Oponente:
+            ---------------------                         ---------------------
+            | 0 1 0 1 1 0 0 1 1 1|                         | 0 0 0 0 0 0 0 0 0 0| 
+            | 0 0 0 0 0 0 0 0 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
+            | 0 0 1 1 1 1 1 0 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
+            | 1 0 0 0 0 0 0 0 0 1|                         | 0 0 0 0 0 0 0 0 0 0| 
+            | 1 0 0 0 0 0 0 1 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
+            | 1 0 0 1 0 0 0 1 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
+            | 0 0 1 0 0 1 1 0 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
+            ---------------------                         ---------------------
+                                      
+Los "0" en el tablero representan a los espacios vacios y los "1" representan los barcos
+Cuando se dispara, si se impacta en un barco enemigo, se marcará con un numero "2" en el tablero. Si el disparo cae en el agua, se marcará con "3".
 
+Según vaya avanzando la partida, los tableros se irán viendo de la siguiente manera: 
 
-
-
+                Tu tablero:                                       Oponente:
+            ----------------------                         ----------------------
+            | 0 2 0 1 1 0 0 1 1 1|                         | 2 2 0 0 0 0 0 0 0 0| 
+            | 0 0 0 0 0 0 0 0 0 0|                         | 0 0 0 0 0 0 2 2 2 0| 
+            | 0 0 1 2 2 2 1 0 0 0|                         | 0 0 0 3 0 0 0 0 0 0| 
+            | 1 0 3 0 0 0 0 0 0 1|                         | 3 0 0 0 0 0 0 0 0 0| 
+            | 1 0 0 0 3 0 0 2 0 0|                         | 0 2 0 0 0 3 0 0 0 0| 
+            | 1 0 3 1 0 0 0 1 0 0|                         | 0 2 0 0 0 0 0 0 3 0| 
+            | 0 0 1 0 0 1 1 0 0 0|                         | 0 3 0 0 0 0 0 0 0 0| 
+            ----------------------                         ----------------------
+ 
 ## contribuciones 
 
 Las contribuciones son bienvenidas. Si encuentras un error o tienes una sugerencia, crea un issue.
@@ -54,8 +87,12 @@ Haz clic en la pestaña Issues.
 Presiona el botón New Issue.
 Completa el formulario con el título y la descripción, y envíalo.
 
+Aquí tienes una pequeña [presentación](https://www.canva.com/design/DAGWBu2P05w/ZN4MPLTiatlBD0-M7gpbtA/edit) del trabajo
 
 ## Autores
 
-Creado por Rafael Neda, Miguel silva, Joaquin Villar, Johann Strauss y Marco Fuchs. Para preguntas o comentarios contacta con:
-(Marcofuchs98@gmail.com, , , ,)
+- [MiguelAngel120](https://github.com/MiguelAngel120)
+- [joaquinvillarmaldonado](https://github.com/joaquinvillarmaldonado)
+- [MarcoFuchs98](https://github.com/MarcoFuchs98)
+- [Johannkarl](https://github.com/Johannkarl)
+- [rafaneda7](https://github.com/rafaneda7)
