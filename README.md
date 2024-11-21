@@ -50,7 +50,7 @@ python main.py
 
 ## Ejemplo
 
-                    Tu tablero:                                       Oponente:       
+                    Tu tablero:                                Tu tablero de disparos:
                 ----------------------                         ---------------------- 
                 | 0 1 0 1 1 0 0 1 1 1|                         | 0 0 0 0 0 0 0 0 0 0| 
                 | 0 0 0 0 0 0 0 0 0 0|                         | 0 0 0 0 0 0 0 0 0 0| 
@@ -66,15 +66,15 @@ Cuando se dispara, si se impacta en un barco enemigo, se marcará con un numero 
 
 Según vaya avanzando la partida, los tableros se irán viendo de la siguiente manera: 
 
-                    Tu tablero:                                       Oponente:       
+                    Tu tablero:                                Tu tablero de disparos:
                 ----------------------                         ---------------------- 
-                | 0 2 0 1 1 0 0 1 1 1|                         | 2 2 0 0 0 0 0 0 0 0| 
-                | 0 0 0 0 0 0 0 0 0 0|                         | 0 0 0 0 0 0 2 2 2 0| 
+                | 0 2 0 1 1 0 0 1 1 1|                         | 0 0 0 0 0 0 0 0 0 0| 
+                | 0 0 0 0 0 0 0 0 0 0|                         | 0 0 0 0 0 0 2 2 0 0| 
                 | 0 0 1 2 2 2 1 0 0 0|                         | 0 0 0 3 0 0 0 0 0 0| 
                 | 1 0 3 0 0 0 0 0 0 1|                         | 3 0 0 0 0 0 0 0 0 0| 
-                | 1 0 0 0 3 0 0 2 0 0|                         | 0 2 0 0 0 3 0 0 0 0| 
-                | 1 0 3 1 0 0 0 1 0 0|                         | 0 2 0 0 0 0 0 0 3 0| 
-                | 0 0 1 0 0 1 1 0 0 0|                         | 0 3 0 0 0 0 0 0 0 0| 
+                | 1 0 0 0 3 0 0 2 0 0|                         | 0 0 2 0 0 3 0 0 0 0| 
+                | 1 0 3 1 0 0 0 1 0 0|                         | 0 0 0 0 0 0 0 0 3 0| 
+                | 0 0 1 0 0 1 1 0 0 0|                         | 0 3 0 0 0 0 3 0 0 0| 
                 ----------------------                         ---------------------- 
 
 ## contribuciones 
